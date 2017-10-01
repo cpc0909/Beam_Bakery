@@ -1,0 +1,60 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Beam Bakery - Dashboard</title>
+	<link rel="stylesheet" href="../themes/theme.min.css" />
+	<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+	<link type="text/css" href="../themes/jqm-datebox.min.css" rel="stylesheet" /> 
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../js/date/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="../js/date/jqm-datebox.core.min.js"></script>
+	<script type="text/javascript" src="../js/date/jqm-datebox.mode.flipbox.min.js"></script>
+	<script src="../js/index.js"></script>
+	<script src="../js/product.js"></script>
+	<script src="../js/category.js"></script>
+	<script src="../js/type.js"></script><script src="../js/bill.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="calculate"  data-theme="a">
+			<div data-role="header" data-position="inline">
+				<h1>Beam Bakery</h1>
+				<a href="dashboard.html" data-icon="home" data-iconpos="notext">Home</a>
+				<a onclick="redirect('calculate_ingredients.html')" data-icon="back" data-iconpos="notext">Back</a>
+			</div>
+			<div data-role="content" data-theme="a"><br>Calculate Ingredient<br><br><span id="ingredient"></span><Br><Br>
+				 <form id="calculate_submit" class="ui-body ui-body-a ui-corner-all" data-ajax="false">
+					<fieldset>
+						
+						
+						
+						<div data-role="fieldcontain">
+							<!--<label for="name">* Quantity:</label>-->
+							<input type="hidden" value="1" name="qty" id="qty"/>
+							<input type="hidden" value="" name="id" id="id"/>
+							<label for="name">* Left weight (g):</label>
+							<input type="text" value="0" name="left_weight" id="left_weight"/>
+						</div>
+							
+						<ul data-role="listview" data-filter="true" data-inset="true" id="items2">
+								
+						</ul>	
+							
+						<input type="submit" data-theme="a" name="submit" id="submit" value="Submit">
+
+						
+						
+					</fieldset>
+				</form>   
+				<div id="items"></div>			
+			</div>
+			
+
+			<div data-theme="a" data-role="footer" data-position="fixed">
+				<center><font size="2"><i>Copyright  &copy; 2015 Beam Bakery </i></font></center>
+			</div>
+		</div>
+  </body>
+</html>
