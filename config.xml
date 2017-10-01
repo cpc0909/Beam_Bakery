@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.beam.support"
+        versionCode = "1"
+        version     = "4.3.0" >
+
+   <name>Beam</name>
+
+   <description>
+       Beam
+   </description>
+
+   <author href="http://beam-bakery.com" email="cpc0909@hotmail.com">
+     Beam
+   </author>
+
+   <gap:platforms>
+       <gap:platform name="android" minVersion="2.3" />
+   </gap:platforms>
+
+  <icon src="icon.png" gap:role="default" />
+
+   <!--<gap:splash src="weirdo.png" />-->
+
+   <feature name="http://api.phonegap.com/1.0/geolocation"/>
+   <feature name="http://api.phonegap.com/1.0/network"/>
+   <feature name="http://api.phonegap.com/1.0/geolocation"/>
+   <feature name="http://api.phonegap.com/1.0/file"/>
+   <feature name="http://api.phonegap.com/1.0/camera"/>
+   <feature name="http://api.phonegap.com/1.0/media"/>
+   <feature name="http://api.phonegap.com/1.0/device"/>
+
+   <!--<preference name="orientation" value="default" />-->
+   <!--<preference name="android-minSdkVersion" value="7" /> -->
+ </widget>
