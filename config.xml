@@ -3,7 +3,7 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "com.beam.support"
         versionCode = "1"
-        version     = "4.4.0" >
+        version     = "4.5.0" >
 
    <name>Beam</name>
 
@@ -18,7 +18,8 @@
    <gap:platforms>
        <gap:platform name="android" minVersion="2.3" />
    </gap:platforms>
-
+ <plugin name="cordova-plugin-whitelist" source="npm" />
+<access origin="*" />
   <icon src="icon.png" gap:role="default" />
 
    <!--<gap:splash src="weirdo.png" />-->
